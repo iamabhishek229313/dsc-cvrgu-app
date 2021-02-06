@@ -28,6 +28,7 @@ dependencies:
   google_sign_in: null
   http: ^0.12.1
   image_picker: ^0.6.7+2
+  liquid_swipe: ^1.5.0
   local_image_provider: ^2.1.0
   path: ^1.6.4
   path_provider: ^1.5.1
@@ -35,11 +36,13 @@ dependencies:
   photo_view: ^0.9.2
   progress_dialog: ^1.2.4
   provider: ^4.0.1
+  qr_code_scanner: ^0.3.2
   share: ^0.6.5+4
   shared_preferences: ^0.5.10
   smooth_page_indicator: ^0.2.0
   timeago: ^2.0.26
   transparent_image: null
+  vibration: ^1.7.3
 
 dev_dependencies:
   flutter_test:
