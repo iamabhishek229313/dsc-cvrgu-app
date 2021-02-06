@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "951807049053",
+    "firebase_url": "https://dsc-cgu.firebaseio.com",
+    "project_id": "dsc-cgu",
+    "storage_bucket": "dsc-cgu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951807049053:android:64865f3c0c6ee7fa9bbcb4",
+        "android_client_info": {
+          "package_name": "com.example.dsc_cvrgu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951807049053-l887tpt9os63mo731sb8it88q79cthnh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dsc_cvrgu",
+            "certificate_hash": "4a229355cb72f05bf7d6bcff54df1844eec00be2"
+          }
+        },
+        {
+          "client_id": "951807049053-866tfhuvr8j6r754pj0313mfnvb253a3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlP0SrOoXDfR8avRHYuqw3gmZGXcDiaI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951807049053-866tfhuvr8j6r754pj0313mfnvb253a3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
