@@ -27,17 +27,10 @@ class _QRViewExampleState extends State<QRViewExample> {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: QRView(
-        key: qrKey,
-        onQRViewCreated: _onQRViewCreated,
-        overlay: QrScannerOverlayShape(
-          borderColor: Colors.red,
-          borderRadius: 10,
-          borderLength: 30,
-          borderWidth: 10,
-          cutOutSize: 300,
-        ),
+    return Center(
+      child: Text(
+        "</Dev Mode>",
+        style: TextStyle(fontSize: 34.0),
       ),
     );
   }

@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: Container(
         width: screenWidth / 5,
         height: screenHeight * 0.075,
-        color: Colors.blueAccent,
+        color: Colors.white,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: List.generate(
@@ -81,7 +81,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   )),
         ),
       ),
-      appBar: (_currentPage == 2) ? null : AppBar(),
+      appBar: (_currentPage == 2)
+          ? null
+          : AppBar(
+              backgroundColor: Colors.transparent,
+              elevation: 0.0,
+              title: Image.asset(
+                'assets/images/logo.png',
+                // fit: BoxFit.contain,
+                width: screenWidth * 0.4,
+              )),
       body: Container(constraints: BoxConstraints.expand(), child: _pages[_currentPage]),
     );
   }
