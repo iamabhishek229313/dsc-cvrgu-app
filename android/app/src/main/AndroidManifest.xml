@@ -7,8 +7,8 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="dsc_cvrgu"
-        android:icon="@mipmap/ic_launcher">
+        android:label="DSC-CVRGU"
+        android:icon="@mipmap/new_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
