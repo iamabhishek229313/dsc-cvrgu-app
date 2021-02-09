@@ -45,11 +45,10 @@ class _StateWrapperScreenState extends State<StateWrapperScreen> {
         builder: (context, snapshot) {
           if (!snapshot.hasData)
             return Scaffold(
-              backgroundColor: Colors.blueGrey.shade50,
-              body: Center(
-                child: SpinKitRotatingPlain(color: Colors.indigo.shade800),
-              ),
-            );
+                backgroundColor: Colors.blueGrey.shade50,
+                body: Center(
+                  child: SpinKitFadingCircle(color: Colors.blueGrey.shade800),
+                ));
 
           if (snapshot.data == false)
             return OnboardingScreen();
@@ -107,7 +106,7 @@ class _CheckForRegistrationState extends State<CheckForRegistration> {
           return Scaffold(
             backgroundColor: Colors.blueGrey.shade50,
             body: Center(
-              child: SpinKitRotatingPlain(color: Colors.indigo.shade800),
+              child: SpinKitFadingCircle(color: Colors.blueGrey.shade800),
             ),
           );
 

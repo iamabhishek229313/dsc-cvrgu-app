@@ -1,4 +1,5 @@
 import 'package:dsc_cvrgu/components/slices/home.dart';
+import 'package:dsc_cvrgu/components/slices/my_profile.dart';
 import 'package:dsc_cvrgu/components/slices/notifcation.dart';
 import 'package:dsc_cvrgu/components/slices/qr_scanner.dart';
 import 'package:dsc_cvrgu/components/slices/write.dart';
@@ -27,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     _currentPage = 0; // Home.
-    _pages = [Home(), Write(), QRViewExample(), Notifications(), Container(color: Colors.red)];
+    _pages = [Home(), Write(), QRViewExample(), Notifications(), MyProfile()];
     _bottomPlate = [
       BottomIcons(FeatherIcons.home, "Home", 0),
       BottomIcons(FeatherIcons.feather, "Write", 0),
@@ -46,7 +47,17 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: Container(
         width: screenWidth / 5,
         height: screenHeight * 0.075,
-        color: Colors.white,
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.7),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 5,
+              blurRadius: 7,
+              offset: Offset(0, 3), // changes position of shadow
+            ),
+          ],
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: List.generate(

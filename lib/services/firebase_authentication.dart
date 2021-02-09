@@ -95,6 +95,7 @@ class Authentication {
     SharedPreferences _prefs = await SharedPreferences.getInstance();
     _prefs.remove(AppConstants.userID);
     _prefs.remove(AppConstants.isRegistered);
+    _prefs.remove(AppConstants.firstTime);
     await _firebaseAuth.signOut().then((value) {
       print("User is Signed out");
     });
