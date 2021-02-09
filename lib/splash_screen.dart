@@ -18,13 +18,14 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: Colors.black,
       constraints: BoxConstraints.expand(),
       padding: EdgeInsets.symmetric(
         horizontal: 24.0,
       ),
       child: Center(
-        child: SizedBox(height: MediaQuery.of(context).size.height * 0.1, child: Image.asset('assets/images/logo.png')),
+        child: SizedBox(
+            height: MediaQuery.of(context).size.height * 0.1, child: Image.asset('assets/images/logoDark.png')),
       ),
     );
   }

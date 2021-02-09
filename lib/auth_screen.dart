@@ -29,11 +29,12 @@ class _AuthScreenState extends State<AuthScreen> {
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.1,
                   ),
-                  Text(
-                    "Welcome to DSC-CVRGU",
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.muli(fontSize: 32.0),
-                  ),
+                  SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.1,
+                      child: Image.asset(
+                        'assets/images/logoVertical.png',
+                        fit: BoxFit.fill,
+                      )),
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.1,
                   ),
