@@ -77,13 +77,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           Icon(
                             _bottomPlate[index].icon,
                             size: 32.0,
-                            color: _currentPage == index ? Colors.deepOrange : Colors.black,
+                            color: _currentPage == index ? Colors.deepOrange.shade800 : Colors.black,
                           ),
                           Text(
                             _bottomPlate[index].title,
                             style: TextStyle(
                               fontSize: 10.0,
-                              color: _currentPage == index ? Colors.deepOrange : Colors.black,
+                              color: _currentPage == index ? Colors.deepOrange.shade800 : Colors.black,
                             ),
                           )
                         ],
